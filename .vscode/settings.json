@@ -1,0 +1,14 @@
+{
+  "dart.flutterSdkPath": "C:/flutter",
+  "dart.sdkPath": "C:/flutter/bin/cache/dart-sdk",
+  "dart.enableSdkFormatter": true,
+  "dart.showDartDeveloperLogs": true,
+  "dart.analysisExcludedFolders": [
+    "build"
+  ],
+  "files.exclude": {
+    "**/.dart_tool": true,
+    "**/.idea": true,
+    "**/.pub-cache": true
+  }
+}

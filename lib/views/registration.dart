@@ -184,9 +184,11 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                     style: TextStyle(color: secondaryColor),
                   ),
                   onTap: () {
-                    Get.toNamed("/");
+                    Get.toNamed("/login");
                   },
                 ),
+              ],
+            ),
             ],
           ),
         ),

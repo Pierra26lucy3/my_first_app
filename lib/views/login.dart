@@ -32,7 +32,21 @@ class _LoginScreenState extends State<LoginScreen> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                Image.asset("assets/daystarlogo.jpeg", height: 300, width: 220),
+                Image.asset(
+                  "assets/daystarlogo.jpeg",
+                  height: 300,
+                  width: 220,
+                  errorBuilder: (context, error, stackTrace) {
+                    return Container(
+                      height: 300,
+                      width: 220,
+                      color: Colors.grey[300],
+                      child: Center(
+                        child: Text('Image not found'),
+                      ),
+                    );
+                  },
+                ),
               ],
             ),
             Text(
@@ -46,7 +60,8 @@ class _LoginScreenState extends State<LoginScreen> {
             TextField(
               decoration: InputDecoration(
                 border: OutlineInputBorder(),
-                prefixIcon: Icon(Icons.person),
+                prefixIcon: Icon(Icons.person, color: primaryColor),
+                labelText: 'Username',
               ),
             ),
             SizedBox(height: 20),
@@ -61,7 +76,8 @@ class _LoginScreenState extends State<LoginScreen> {
             TextField(
               decoration: InputDecoration(
                 border: OutlineInputBorder(),
-                prefixIcon: Icon(Icons.lock),
+                prefixIcon: Icon(Icons.lock, color: primaryColor),
+                labelText: 'Password',
               ),
             ),
             SizedBox(height: 20),

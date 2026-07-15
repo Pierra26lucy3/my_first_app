@@ -1,5 +1,16 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:my_first_app/views/breeds.dart';
+import 'package:my_first_app/views/dashboard.dart';
+import 'package:my_first_app/views/orders.dart';
+import 'package:my_first_app/views/profile.dart';
+var screens=[
+  DashboardScreen(),
+  OrdersScreen(),
+  BreedsScreen(),
+  ProfileScreen()
+];
+int position=0;
 
 class HomeScreen extends StatefulWidget {
   const HomeScreen({super.key});
@@ -17,13 +28,18 @@ class HomeScreenState extends State<HomeScreen> {
     items: <Widget>[
       Icon(Icons.add, size: 30),
       Icon(Icons.list, size: 30),
-      Icon(Icons.compare_arrows, size: 30),
+      Icon(Icons.home, size: 30),
+      Icon(Icons.person, size: 30),
+
     ],
     onTap: (index) {
+      setState(() {
+        position=index;
+      });
       //Handle button tap
     },
   ),
-  body: Container(color: Colors.blueAccent),
+  body: screens[position],
 );
   }
 }

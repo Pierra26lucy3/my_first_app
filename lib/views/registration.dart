@@ -22,10 +22,18 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
         foregroundColor: Colors.white,
         centerTitle: true,
       ),
-      body: Padding(
-        padding: const EdgeInsets.all(20.0),
-        child: SingleChildScrollView(
-          child: Column(
+      body: Stack(
+        children: [
+          Positioned.fill(
+            child: Image.asset('assets/pet_backgound.jpg', fit: BoxFit.cover),
+          ),
+          Positioned.fill(
+            child: Container(color:primaryColor.withValues(alpha: 0.15)),
+          ),
+          Padding(
+            padding: const EdgeInsets.all(20.0),
+            child: SingleChildScrollView(
+              child: Column(
             crossAxisAlignment: CrossAxisAlignment.start,
             children: [
               Text(
@@ -193,6 +201,6 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
           ),
         ),
       ),
-    );
+   ] ],\n),);
   }
 }

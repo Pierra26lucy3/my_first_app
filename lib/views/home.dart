@@ -1,5 +1,6 @@
 import 'package:curved_navigation_bar/curved_navigation_bar.dart';
 import 'package:flutter/material.dart';
+import 'package:my_first_app/configs/colors.dart';
 import 'package:my_first_app/views/breeds.dart';
 import 'package:my_first_app/views/dashboard.dart';
 import 'package:my_first_app/views/orders.dart';
@@ -24,11 +25,13 @@ class HomeScreenState extends State<HomeScreen> {
   Widget build(BuildContext context) {
     return Scaffold(
   bottomNavigationBar: CurvedNavigationBar(
-    backgroundColor: Colors.blueAccent,
+    color:Colors.white,
+    backgroundColor: Colors.transparent,
+    buttonBackgroundColor: primaryColor,
     items: <Widget>[
-      Icon(Icons.add, size: 30),
-      Icon(Icons.list, size: 30),
-      Icon(Icons.home, size: 30),
+      Icon(Icons.pets, size: 30),
+      Icon(Icons.receipt_long, size: 30),
+      Icon(Icons.search, size: 30),
       Icon(Icons.person, size: 30),
 
     ],

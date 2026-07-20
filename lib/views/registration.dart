@@ -166,6 +166,9 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
                 GestureDetector(
+                  onTap: () {
+                    Get.toNamed("/");
+                  },
                   child: MaterialButton(
                     onPressed: () {
                       Get.toNamed("/");
@@ -192,7 +195,7 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
                     style: TextStyle(color: secondaryColor),
                   ),
                   onTap: () {
-                    Get.toNamed("/login");
+                    Get.offNamed("/login");
                   },
                 ),
               ],
@@ -201,6 +204,8 @@ class _RegistrationScreenState extends State<RegistrationScreen> {
           ),
         ),
       ),
-   ] ],\n),);
+   ],
+      ),
+    );
   }
 }

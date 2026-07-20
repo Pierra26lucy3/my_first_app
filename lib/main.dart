@@ -1,7 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:get/get.dart';
 import 'package:my_first_app/configs/route.dart';
-import 'package:my_first_app/views/login.dart';
 
 void main() {
   runApp(const GradingApp());
@@ -19,7 +18,6 @@ class _GradingAppState extends State<GradingApp> {
   Widget build(BuildContext context) {
     return GetMaterialApp(
       debugShowCheckedModeBanner: false,
-      home: const LoginScreen(),
       initialRoute: '/login',
       getPages: routes,
     );

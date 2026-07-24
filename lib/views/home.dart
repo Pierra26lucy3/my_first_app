@@ -3,11 +3,11 @@ import 'package:flutter/material.dart';
 import 'package:my_first_app/configs/colors.dart';
 import 'package:my_first_app/views/breeds.dart';
 import 'package:my_first_app/views/dashboard.dart';
-import 'package:my_first_app/views/orders.dart';
+import 'package:my_first_app/views/applications.dart';
 import 'package:my_first_app/views/profile.dart';
 var screens=[
   DashboardScreen(),
-  OrdersScreen(),
+  ApplicationsScreen(),
   BreedsScreen(),
   ProfileScreen()
 ];
@@ -30,7 +30,7 @@ class HomeScreenState extends State<HomeScreen> {
     buttonBackgroundColor: primaryColor,
     items: <Widget>[
       Icon(Icons.pets, size: 30),
-      Icon(Icons.receipt_long, size: 30),
+      Icon(Icons.assignment, size: 30),
       Icon(Icons.search, size: 30),
       Icon(Icons.person, size: 30),
 

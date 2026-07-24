@@ -4,7 +4,7 @@ final List<Pet> samplePets = [
   Pet(
     id: '1',
     name: 'Milo',
-    breed: 'bulldog',
+    breed: 'Bulldog',
     imagePath: 'assets/pets/bulldog.jpg',
     ageMonths: 8,
     gender: 'Male',
@@ -13,7 +13,7 @@ final List<Pet> samplePets = [
   Pet(
     id: '2',
     name: 'Luna',
-    breed: 'doberman',
+    breed: 'Doberman',
     imagePath: 'assets/pets/doberman.jpg',
     ageMonths: 14,
     gender: 'Female',
@@ -22,7 +22,7 @@ final List<Pet> samplePets = [
   Pet(
     id: '3',
     name: 'Rocky',
-    breed: 'husky',
+    breed: 'Husky',
     imagePath: 'assets/pets/husky.jpg',
     ageMonths: 24,
     gender: 'Male',
@@ -31,7 +31,7 @@ final List<Pet> samplePets = [
   Pet(
     id: '4',
     name: 'Bella',
-    breed: 'goldenretriever',
+    breed: 'Golden Retriever',
     imagePath: 'assets/pets/goldenretriever.jpg',
     ageMonths: 6,
     gender: 'Female',
